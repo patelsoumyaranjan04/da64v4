@@ -1,0 +1,111 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            qhoucldivoritezwu5lxr6971ggopfo0:
+                args:
+                    - -d
+                    - mnist
+                    - -e
+                    - "20"
+                    - -b
+                    - "64"
+                    - -l
+                    - cross_entropy
+                    - -o
+                    - rmsprop
+                    - -lr
+                    - "0.001"
+                    - -nhl
+                    - "4"
+                    - -sz
+                    - "128"
+                    - "128"
+                    - "128"
+                    - "128"
+                    - -a
+                    - relu
+                    - -w_i
+                    - xavier
+                codePath: src\train.py
+                codePathLocal: src\train.py
+                cpu_count: 6
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "509722226688"
+                        used: "136373968896"
+                email: samwellthorson04@gmail.com
+                executable: C:\Users\samwe\AppData\Local\Programs\Python\Python311\python.exe
+                git:
+                    commit: 671b6914588cc2eaaa0e82e93c7f132e34a2b5a6
+                    remote: https://github.com/MiRL-IITM/da6401_assignment_1.git
+                host: alpha
+                memory:
+                    total: "14870306816"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\samwe\OneDrive\Desktop\da6401_assignment_1\src\train.py
+                python: CPython 3.11.0
+                root: C:\Users\samwe\OneDrive\Desktop\da6401_assignment_1
+                startedAt: "2026-03-05T22:04:22.952538Z"
+                writerId: qhoucldivoritezwu5lxr6971ggopfo0
+        m: []
+        python_version: 3.11.0
+        t:
+            "1":
+                - 2
+                - 3
+                - 5
+                - 53
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 2
+                - 13
+                - 14
+                - 16
+            "4": 3.11.0
+            "5": 0.25.0
+            "8":
+                - 3
+            "10":
+                - 20
+            "12": 0.25.0
+            "13": windows-amd64
+activation:
+    value: relu
+batch_size:
+    value: 64
+dataset:
+    value: mnist
+epochs:
+    value: 20
+hidden_size:
+    value:
+        - 128
+        - 128
+        - 128
+        - 128
+learning_rate:
+    value: 0.001
+loss:
+    value: cross_entropy
+model_save_path:
+    value: best_model.npy
+no_wandb:
+    value: false
+num_layers:
+    value: 4
+optimizer:
+    value: rmsprop
+wandb_entity:
+    value: null
+wandb_project:
+    value: da6401_assignment1
+weight_decay:
+    value: 0
+weight_init:
+    value: xavier

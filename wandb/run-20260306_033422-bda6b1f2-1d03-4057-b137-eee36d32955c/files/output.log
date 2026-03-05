@@ -1,0 +1,24 @@
+Training...
+Epoch 1/20 | loss 0.2692 | train_acc 0.9565 | val_acc 0.9528
+Epoch 2/20 | loss 0.1133 | train_acc 0.9755 | val_acc 0.9637
+Epoch 3/20 | loss 0.0805 | train_acc 0.9815 | val_acc 0.9658
+Epoch 4/20 | loss 0.0602 | train_acc 0.9887 | val_acc 0.9745
+Epoch 5/20 | loss 0.0498 | train_acc 0.9827 | val_acc 0.9682
+Epoch 6/20 | loss 0.0416 | train_acc 0.9920 | val_acc 0.9745
+Epoch 7/20 | loss 0.0355 | train_acc 0.9901 | val_acc 0.9720
+Epoch 8/20 | loss 0.0296 | train_acc 0.9945 | val_acc 0.9790
+Epoch 9/20 | loss 0.0253 | train_acc 0.9946 | val_acc 0.9778
+Epoch 10/20 | loss 0.0234 | train_acc 0.9954 | val_acc 0.9768
+Epoch 11/20 | loss 0.0204 | train_acc 0.9966 | val_acc 0.9797
+Epoch 12/20 | loss 0.0189 | train_acc 0.9957 | val_acc 0.9767
+Epoch 13/20 | loss 0.0175 | train_acc 0.9934 | val_acc 0.9750
+Epoch 14/20 | loss 0.0163 | train_acc 0.9971 | val_acc 0.9760
+Epoch 15/20 | loss 0.0140 | train_acc 0.9946 | val_acc 0.9733
+Epoch 16/20 | loss 0.0126 | train_acc 0.9975 | val_acc 0.9778
+Epoch 17/20 | loss 0.0125 | train_acc 0.9962 | val_acc 0.9755
+Epoch 18/20 | loss 0.0125 | train_acc 0.9963 | val_acc 0.9780
+Epoch 19/20 | loss 0.0100 | train_acc 0.9986 | val_acc 0.9792
+Epoch 20/20 | loss 0.0103 | train_acc 0.9975 | val_acc 0.9797
+
+Test |acc 0.9772 |f1 0.9771 |precision 0.9772 |recall 0.9770
+Model saved: best_model.npy
