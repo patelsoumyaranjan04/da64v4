@@ -61,8 +61,16 @@ class NeuralNetwork:
 
         delta = LOSS_GRAD[self.args.loss](logits, y)
 
+        grads_w = []
+        grads_b = []
+
         for layer in reversed(self.layers):
             delta = layer.backward(delta)
+
+            grads_w.insert(0, layer.grad_W)
+            grads_b.insert(0, layer.grad_b)
+
+        return grads_w, grads_b
 
     def update(self):
         self.optimizer.step(self.layers)
