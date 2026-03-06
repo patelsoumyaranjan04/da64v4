@@ -110,17 +110,13 @@ def main():
     if run:
         run.log({"test_acc":test["accuracy"],"test_f1":test["f1"]})
 
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    path=args.model_save_path
 
-    save_path = os.path.join(BASE_DIR, args.model_save_path)
+    os.makedirs(os.path.dirname(os.path.abspath(path)),exist_ok=True)
 
-    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+    np.save(path,model.get_weights())
 
-    weights = model.get_weights()
-    np.save(save_path, weights)
-
-
-    with open(os.path.join(BASE_DIR, "best_config.json"),"w") as f:
+    with open(os.path.join(os.path.dirname(path),"best_config.json"),"w") as f:
         json.dump(vars(args),f,indent=2)
 
     print("Model saved:",path)
@@ -130,5 +126,4 @@ def main():
 
 
 if __name__=="__main__":
-
     main()
