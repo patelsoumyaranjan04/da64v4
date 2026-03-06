@@ -40,7 +40,10 @@ def main():
 
     model=NeuralNetwork(args)
 
-    weights=load_weights(args.model_path)
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(BASE_DIR, args.model_path)
+    
+    weights = load_model(model_path)
 
     model.set_weights(weights)
 
@@ -54,4 +57,5 @@ def main():
 
 
 if __name__=="__main__":
+
     main()
